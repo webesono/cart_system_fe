@@ -39,15 +39,14 @@ export const checkoutApi = {
     await new Promise(resolve => setTimeout(resolve, 1500));
     
     // Mock response
-    return {
-      success: false,
-      message: 'Gagal menambahkan data',
-    };
     // return {
-    //   success: true,
-    //   message: 'Order created successfully',
-    //   orderId: `ORD-${Date.now()}`,
-    //   timestamp: new Date().toISOString()
+    //   success: false,
+    //   message: 'Gagal menambahkan data',
     // };
+    return {
+      success: true,
+      message: 'Order created successfully',
+      orderId: `ORD-${Date.now()}`
+    };
   }
 };
