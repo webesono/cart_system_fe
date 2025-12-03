@@ -35,6 +35,7 @@ export const productApi = new ProductAPI();
 export const checkoutApi = {
   createOrder: async (payload: any) : Promise<responseCheckout> => {
 
+    console.log(payload)
     await new Promise(resolve => setTimeout(resolve, 1500));
     
     // Mock response
